@@ -1,22 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="50d17a21-b085-4d7d-92b4-4a14cdffcc95" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/miaosha/dao/UsePasswordDOMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/miaosha/dao/UserPasswordDOMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/miaosha/dataobject/UsePasswordDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/miaosha/dataobject/UserPasswordDO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapping/UsePasswordDOMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapping/UserPasswordDOMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-generator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis-generator.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/miaosha/dao/UsePasswordDOMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/miaosha/dataobject/UsePasswordDO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapping/UsePasswordDOMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mybatis-generator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mybatis-generator.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/miaoshaproject.kotlin_module" beforeDir="false" />
-    </list>
+    <list default="true" id="50d17a21-b085-4d7d-92b4-4a14cdffcc95" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -123,6 +108,7 @@
       <workItem from="1592741871133" duration="4366000" />
       <workItem from="1592746276427" duration="1819000" />
       <workItem from="1592748125596" duration="10425000" />
+      <workItem from="1592760707595" duration="20000" />
     </task>
     <servers />
   </component>
