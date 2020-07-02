@@ -26,7 +26,9 @@
 <!--               enableSelectByExample="false" enableUpdateByExample="false" selectByExampleQueryId="false"></table>-->
 <!--        <table tableName="item" domainObjectName="ItemDO" enableCountByExample="false" enableDeleteByExample="false"-->
 <!--               enableSelectByExample="false" enableUpdateByExample="false" selectByExampleQueryId="false"></table>-->
-        <table tableName="order_info"  domainObjectName="OrderDO" enableCountByExample="false" enableDeleteByExample="false"
+<!--        <table tableName="order_info"  domainObjectName="OrderDO" enableCountByExample="false" enableDeleteByExample="false"-->
+<!--               enableSelectByExample="false" enableUpdateByExample="false" selectByExampleQueryId="false"></table>-->
+        <table tableName="sequence_info"  domainObjectName="SequenceDO" enableCountByExample="false" enableDeleteByExample="false"
                enableSelectByExample="false" enableUpdateByExample="false" selectByExampleQueryId="false"></table>
     </context>
 </generatorConfiguration>

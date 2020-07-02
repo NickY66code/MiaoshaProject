@@ -20,21 +20,6 @@ import org.springframework.web.bind.annotation.RestController;
 @MapperScan("com.miaosha.dao")
 public class App 
 {
-    @Autowired
-    private UserDOMapper userDOMapper;
-
-    @RequestMapping("/")
-    public String run(){
-        UserDO userDO =userDOMapper.selectByPrimaryKey(1);
-        System.out.println(userDO);
-        if(userDO==null){
-            return "用户对象不存在！";
-        }else
-        {
-             return userDO.getUsername();
-        }
-        //return "hello world";
-    }
 
     public static void main( String[] args )
     {

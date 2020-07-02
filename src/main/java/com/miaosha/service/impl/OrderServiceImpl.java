@@ -71,8 +71,12 @@ public class OrderServiceImpl implements OrderService {
         //生成交易流水号,订单号
         orderModel.setId(generateOrderNo());
         OrderDO orderDO =convertFromOrderModel(orderModel);
+        //orderDOMapper.insert(orderDO);
         orderDOMapper.insertSelective(orderDO);
-        
+
+        //加上商品的销量
+        itemService.increaseSales(itemId,amount);
+
         //4.返回前端
         return orderModel;
     }
@@ -96,7 +100,7 @@ public class OrderServiceImpl implements OrderService {
         int sequence=0;
         SequenceDO sequenceDO=sequenceDOMapper.getSequenceByName("order_info");
         sequence=sequenceDO.getCurrentValue();
-        sequenceDO.setCurrentValue(sequenceDO.getCurrentValue()+sequenceDO.getCurrentValue());
+        sequenceDO.setCurrentValue(sequenceDO.getCurrentValue()+sequenceDO.getStep());
         sequenceDOMapper.updateByPrimaryKeySelective(sequenceDO);
         String sequenceStr =String.valueOf(sequence);
         for (int i=0;i<6-sequenceStr.length();i++){
@@ -110,11 +114,13 @@ public class OrderServiceImpl implements OrderService {
     }
 
     private OrderDO convertFromOrderModel(OrderModel orderModel){
-        if (orderModel!=null){
+        if (orderModel==null){
             return null;
         }
         OrderDO orderDO=new OrderDO();
         BeanUtils.copyProperties(orderModel,orderDO);
+        orderDO.setItemPrice(orderModel.getItemPrice().doubleValue());
+        orderDO.setOrderPrice(orderModel.getOrderPrice().doubleValue());
         return orderDO;
     }
 }
