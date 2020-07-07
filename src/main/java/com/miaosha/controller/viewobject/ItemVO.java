@@ -1,5 +1,7 @@
 package com.miaosha.controller.viewobject;
 
+import org.joda.time.DateTime;
+
 import java.math.BigDecimal;
 
 public class ItemVO {
@@ -10,6 +12,50 @@ public class ItemVO {
     private String description;
     private Integer sales;
     private String imgUrl;
+
+    //记录商品是否在秒杀活动中，以及0对应没有秒杀活动。1表示活动待开始，2表示活动进行中
+    private Integer promoStatus;
+
+    //秒杀活动价格
+    private BigDecimal promoPrice;
+
+    //秒杀活动id
+    private Integer promoId;
+
+    //秒杀活动的开始时间
+    private String startDate;
+
+    public Integer getPromoStatus() {
+        return promoStatus;
+    }
+
+    public void setPromoStatus(Integer promoStatus) {
+        this.promoStatus = promoStatus;
+    }
+
+    public BigDecimal getPromoPrice() {
+        return promoPrice;
+    }
+
+    public void setPromoPrice(BigDecimal promoPrice) {
+        this.promoPrice = promoPrice;
+    }
+
+    public Integer getPromoId() {
+        return promoId;
+    }
+
+    public void setPromoId(Integer promoId) {
+        this.promoId = promoId;
+    }
+
+    public String getStartDate() {
+        return startDate;
+    }
+
+    public void setStartDate(String startDate) {
+        this.startDate = startDate;
+    }
 
     public Integer getId() {
         return id;
